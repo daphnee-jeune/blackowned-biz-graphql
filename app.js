@@ -26,4 +26,4 @@ app.get('/', (req, res) => {
     res.send("Hello from backend app.js")
 })
 
-app.listen(5000, () => console.log("Connected on Port 5000"))
+app.listen(process.env.PORT || 5000, () => console.log("Connected on Port 5000"))
